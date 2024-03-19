@@ -1,0 +1,533 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+    background-color: #081b29;
+    color: white;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding-top: 10px;
+
+}
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    margin-left: 70%;
+    padding-top: 10px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.3s;
+    
+}
+.navbar a:hover,.navbar a.active{
+    color: #00abf0;
+}
+.Home{
+    display: flex;
+    align-items:center;
+    height: 100vh;
+    padding: 0 10%;
+
+}
+.class-con{
+   
+    width: 600px;
+
+}
+.class-con h1{
+    font-size: 60px;
+    font-weight: 700px;
+}
+.class-con h3{
+    font-size: 32px;
+    font-weight: 700px;
+    color: #00abf0;
+}
+.Home p {
+    font-size: 20px;
+    margin: 20px 0 18px;
+    line-height: 1.2;
+
+}
+.class-con .btn-box{
+width: 350px;
+height: 40px;
+display: flex;
+justify-content: space-between;
+
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+   
+}
+.btn-box a:nth-child(2)::before{
+    background-color: #00abf0;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    background-color: #081b29;
+    z-index: -1;
+    transition: .5s;
+    
+
+}
+.btn-box a:hover::before{
+ width: 100%;
+}
+.icon{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.icon a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border:2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.icon a:hover{
+color:#081b29;
+}
+.icon a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+
+}
+.icon a:hover::before{
+    width: 100%;
+}
+.main2{
+    height:500px;
+    width: 500px;
+    background-size: contain;
+    margin-left: 200px;
+
+    
+}
+.main2 img{
+    
+    height: 500px;
+    width: 500px;
+}
+/*---------------------------------------------------------------About section-----------------------------------------*/
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abt1{
+
+    height:600px;;
+    width: 600px;
+   
+}
+.abt1 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+.abt1 dl{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+.abt1 h3{
+    font-size: 30px;
+}
+.abt1 p{
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+/*---------------------------------------------------------------myskills section-----------------------------------------*/
+
+.features{
+   height: 200px;
+   width: 200px;
+   background-color: red;
+  
+   margin-top: 50px;
+   margin-left: 300px;
+   border: 2px solid white;
+   border-radius: 8px;  
+
+}
+.features h5{
+    font-size: 30px;
+}
+.skills h1{
+    margin-right: 50px;
+}
+/* Hover effect for card title */
+.Htmlcard:hover .card-title {
+    color: white;
+}
+
+/* Hover effect for card body */
+.Htmlcard:hover .card-body {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hover effect for card image */
+.Htmlcard:hover .card-img-top {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for all cards */
+.Htmlcard:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.skillcards{
+    display: flex;
+}
+.features2{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+   
+    margin-top: 50px;
+    margin-left: 300px;
+    border: 2px solid white;
+    border-radius: 8px;  
+ 
+ }
+.features2 h5{
+    font-size: 30px;
+}
+/*---------------------------------------------------------------myskills section skillcard2-----------------------------------------*/
+.skillcard2{
+   
+    display: flex;
+   
+}
+.features3{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+   
+    margin-top: 50px;
+    margin-left: 480px;
+    border: 2px solid white;
+    border-radius: 8px;  
+ }
+ .features3 h5{
+    font-size: 30px;
+}
+.features4{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+   
+    margin-top: 50px;
+    margin-left:300px;
+    border: 2px solid white;
+    border-radius: 8px;  
+ }
+ .features4 h5{
+    font-size: 30px;
+}
+/*---------------------------------------------------------------myskills section skillcard3-----------------------------------------*/
+.skillcard3{
+   
+    display: flex;
+   
+}
+.features5{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+   
+    margin-top: 50px;
+    margin-left:480px;
+    border: 2px solid white;
+    border-radius: 8px;  
+ }
+ .features5 h5{
+    font-size: 30px;
+}
+.features6{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+   
+    margin-top: 50px;
+    margin-left:300px;
+    border: 2px solid white;
+    border-radius: 8px;  
+ }
+ .features6 h5{
+    font-size: 30px;
+}
+/*---------------------------------------------------------------myskills section skillcard3-----------------------------------------*/
+.skillcard4{
+   
+    display: flex;
+   
+}
+.features7{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+   
+    margin-top: 50px;
+    margin-left:480px;
+    border: 2px solid white;
+    border-radius: 8px;  
+ }
+ .features7 h5{
+    font-size: 30px;
+}
+.features8{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+   
+    margin-top: 50px;
+    margin-left:300px;
+    border: 2px solid white;
+    border-radius: 8px;  
+ }
+
+ .features8 h5{
+    font-size: 30px;
+}
+
+
+/* common hover effects for all */
+.Htmlcard2:hover .card-title {
+    color: white;
+}
+
+/* Hover effect for card body */
+.Htmlcard2:hover .card-body {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hover effect for card image */
+.Htmlcard2:hover .card-img-top {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for all cards */
+.Htmlcard2:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* css for form */
+
+form {
+    max-width: 500px;
+    margin-left: 200px ;
+
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Makes padding and border included in the width */
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.cn1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+
+}
+.contactimage{
+    height: 400px;
+    width:400px;
+   margin-right: 200px;
+  
+}
+.contactimage img{
+    height:370px;
+    width: 350px;  
+   
+      
+}
+/*---------------------------------------------------------------usefull link section-----------------------------------------*/
+
+.lnk{
+    display: flex;
+    
+}
+.lnk a{
+    color: white;
+    
+}
+.lnk1{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 200px;
+    
+}
+.name{
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.iframe{
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 2px solid  black;
+    
+}
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex; /* Display navbar for tablets and larger devices */
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .navbar a {
+        margin-left: 20px;
+    }
+
+    .Home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+    }
+
+    .Home {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        margin-left: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
